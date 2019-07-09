@@ -1,10 +1,11 @@
 puts "Balance un nombre!"
 print "> "
+
 num = gets.chomp.to_i
 
-fin_compte_a_rebour = 0
+i = num - 1
 
-while num >= fin_compte_a_rebour
-	puts num
-	num -= 1
+while i >= 0
+	puts i
+	i -= 1
 end
