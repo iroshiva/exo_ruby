@@ -1,13 +1,29 @@
-# Construis un programme exo_20.rb qui va demander à l'utilisateur un nombre entre 1 et 25 et qui va sortir une pyramide à descendre d' autant d'étages que ce nombre. Voici un exemple :
-
-# Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?
-# > 5
-# Voici la pyramide :
-# #
-# ##
-# ###
-# ####
-# #####
-
-
 puts "Balance un nombre entre 1 et 25!"
+print "> "
+
+nbre = gets.chomp.to_i
+i = 0
+
+# qu'est-ce qu'il se passe si nombre en dessous de 1 ET supérieur à 25 ???? FAIRE condition direct
+ # - Si nombre correct : effectuer la boucle
+ # - si nombre pas correct : demander nombre entre 1 et 25
+ # Non..... Creer la boucle d'abord et dire ensuite les conditions.... !!!!
+
+while i <= nbre
+
+	# condition : si nombre pas compris entre 1 et 25
+	if nbre < 1 || nbre > 25
+
+	#Afficher la phrase
+	puts " Tu sais lire? Un nombre entre 1 et 25!"
+	print "> "
+	nbre = gets.chomp.to_i
+
+	# sinon : lancer la boucle !
+	else
+	puts "#" * i
+	i += 1
+
+	end
+
+end
